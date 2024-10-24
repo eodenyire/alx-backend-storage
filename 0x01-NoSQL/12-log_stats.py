@@ -25,7 +25,7 @@ def log_stats():
         patch = logs_collection.count_documents({"method": "PATCH"})
         delete = logs_collection.count_documents({"method": "DELETE"})
         path = logs_collection.count_documents({"method": "GET", "path": "/status"})
-        
+
         print(f"{total} logs")
         print("Methods:")
         print(f"\tmethod GET: {get}")
